@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/tuPopupmenu"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/style_menubutton"
+        android:backgroundTint="#00BCD4"
+        android:padding="6dp"
+        app:tint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/toGameClose"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/style_menubutton"
+        app:tint="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cross" />
+
+    <Chronometer
+        android:id="@+id/chronometr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#070404"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toGameClose"
+        app:layout_constraintEnd_toStartOf="@+id/tuPopupmenu"
+        app:layout_constraintStart_toEndOf="@+id/toGameClose"
+        app:layout_constraintTop_toTopOf="@+id/toGameClose" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/style_gamefield"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuPopupmenu"
+        app:layout_constraintVertical_bias="0.244">
+
+        <ImageView
+            android:id="@+id/cell33"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cell32"
+            app:layout_constraintTop_toBottomOf="@+id/cell23"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell32"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toStartOf="@+id/cell33"
+            app:layout_constraintStart_toEndOf="@+id/cell31"
+            app:layout_constraintTop_toBottomOf="@+id/cell22"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell31"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toStartOf="@+id/cell32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cell21"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell23"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cell22"
+            app:layout_constraintTop_toBottomOf="@+id/cell13"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell22"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toStartOf="@+id/cell23"
+            app:layout_constraintStart_toEndOf="@+id/cell21"
+            app:layout_constraintTop_toBottomOf="@+id/cell12"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell21"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toStartOf="@+id/cell22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cell11"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell13"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cell12"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell12"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toStartOf="@+id/cell13"
+            app:layout_constraintStart_toEndOf="@+id/cell11"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/cross" />
+
+        <ImageView
+            android:id="@+id/cell11"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:background="#FBFBFB"
+            app:layout_constraintEnd_toStartOf="@+id/cell12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/cross" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

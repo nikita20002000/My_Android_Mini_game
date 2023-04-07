@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My_Game</string>
+    <string name="title_new_game">Новая игра</string>
+    <string name="title_options">Настройки</string>
+    <string name="title_continue_game">Продолжить игру</string>
+    <string name="dialog_continue_game">Продолжить игру</string>
+    <string name="dialog_settings">Настройки</string>
+    <string name="dialog_exit">Сохранить и выйти</string>
+
+    <string name="preference_file_key">com.example.my_game.file_key</string>
+    
+    <string-array name="game_level">
+        <item>ЛЕГКО</item>
+        <item>НОРМАЛЬНО</item>
+        <item>СЛОЖНО</item>
+    </string-array>
+    <string name="dialog_status_win">Вы выиграли!</string>
+    <string name="dialog_status_lose">Вы проиграли!</string>
+    <string name="dialog_status_draw">У вас ничья(</string>
+</resources>

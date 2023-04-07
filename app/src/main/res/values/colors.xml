@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yellow">#B1902F</color>
+    <color name="Коричневый"> #9A6953</color>
+    <color name="Голубой">#337B91</color>
+    <color name="красный">#882929</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#673AB7</color>
+    <color name="purple_700">#4B10B5</color>
+    <color name='teal_200'>#D5AAA7</color>
+
+</resources>

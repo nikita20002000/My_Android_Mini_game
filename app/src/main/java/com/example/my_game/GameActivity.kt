@@ -272,8 +272,8 @@ class GameActivity : AppCompatActivity() {
             else if (cols.all { it == "0" })
                 return STATUS_PLAYER_LOSE
 
-            countRowsHu = 0
-            countRowsAi = 0
+//            countRowsHu = 0
+//            countRowsAi = 0
 
             cols.forEachIndexed { indexCols, cell ->
                 if (board[indexCols][indexRow] == "X")
@@ -351,14 +351,14 @@ class GameActivity : AppCompatActivity() {
         var rightDiagonal = 0
         var n = gameField.size
 
-        for (i in 0..1){
-            if(gameField[x][column] == symbol)
+        for (i in 0..2){
+            if(gameField[x][i] == symbol)
                 column++
-            else if (gameField[i][column] == symbol)
+            if (gameField[i][y] == symbol)
                 row++
-            else if (gameField[i][i] == symbol)
+            if (gameField[i][i] == symbol)
                 leftDiagonal++
-            else if (gameField[i][n - i - 1] == symbol)
+            if (gameField[i][n - i - 1] == symbol)
                 rightDiagonal++
         }
 

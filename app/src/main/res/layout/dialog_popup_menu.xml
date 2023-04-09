@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:shadowColor="#000000"
-            android:text="Меню"
+            android:text="@string/popup_title"
             android:textColor="#000000"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="parent"

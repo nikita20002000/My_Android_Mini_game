@@ -7,7 +7,7 @@
     <string name="dialog_settings">Настройки</string>
     <string name="dialog_exit">Сохранить и выйти</string>
 
-    <string name="preference_file_key">com.example.my_game.file_key</string>
+    <string name="preference_file_key" translatable="false">com.example.my_game.file_key</string>
     
     <string-array name="game_level">
         <item>ЛЕГКО</item>
@@ -17,4 +17,13 @@
     <string name="dialog_status_win">Вы выиграли!</string>
     <string name="dialog_status_lose">Вы проиграли!</string>
     <string name="dialog_status_draw">У вас ничья(</string>
+    <string name="options_sound">Звук</string>
+    <string name="options_difficulty">Cложность</string>
+    <string name="options_game_rules">Правила игры</string>
+    <string name="check_text_horizontal">Ряд по вертикали</string>
+    <string name="check_text_horizontall">Ряд по горизонтали</string>
+    <string name="check_text_diagonal">Ряд по диагонали</string>
+    <string name="options_return">Вернуться</string>
+    <string name="popup_title">Меню</string>
+    <string name="popup_status_ok">OK</string>
 </resources>
